@@ -5,6 +5,8 @@ Requires: jQuery (tested with v 1.11)
 # Usage
 `$("#dest").addStarRating(options);` // add rating widget to div container wich ID is 'dest'
 
+![Image of Yaktocat](https://github.com/bodik10/starrating/blob/master/img/sample.JPG)
+
 # Options
 JS object
 
