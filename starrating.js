@@ -42,7 +42,7 @@ jQuery.fn.addStarRating = function(options){
 			.addClass('rating_star')
 			.data('id', i+1)
 			.on('mouseover', function(event){
-				var index = parseInt($(this).data("id"));
+				var index = parseInt($(this).data("id"), 10);
 				
 				// makes all 'stars' filled within current container ($destElement) that are placed before (and under) cursor 
 				$(".rating_star:lt(" + (index) + ")", $destElement).attr("src", options.img_filled);
@@ -62,7 +62,7 @@ jQuery.fn.addStarRating = function(options){
 				}
 			})
 			.on('click', function(event){
-				rating = parseInt($(this).data("id")); // sets raating variable
+				rating = parseInt($(this).data("id"), 10); // sets raating variable
 				$("#" + options.input_id).val(rating); // stores rating into input box
 			});
 		
